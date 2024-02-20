@@ -1,21 +1,16 @@
 import { Link } from "react-router-dom";
-import "./styles/Navbar.css";
-import { navbarItems } from "../../assets/constants";
+import "./styles/Header.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
-  console.log(navbarItems);
   return (
-    <nav className="nav">
+    <nav className="header">
       <div className="brand">
         <Link to={"/"}>Uttam</Link>
       </div>
       <div className="nav-links">
-        {navbarItems.map((link) => (
-          <Link to={link.to} key={link.id}>
-            {link.navItem}
-          </Link>
-        ))}
-        Hello
+        <FontAwesomeIcon icon={faBars} />
       </div>
     </nav>
   );

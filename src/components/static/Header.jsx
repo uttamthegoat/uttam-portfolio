@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./styles/Navbar.css";
 import { navbarItems } from "../../assets/constants";
 
-const Navbar = () => {
+const Header = () => {
   console.log(navbarItems);
   return (
     <nav className="nav">
@@ -21,4 +21,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;

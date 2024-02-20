@@ -1,4 +1,6 @@
 .App {
+  min-height: 100vh;
+  width: 100%;
 }
 
 .routes-layout .h1s {
@@ -19,7 +21,7 @@
   width: 100%;
   height: 100vh;
   background: black;
-  transform-origin: bottom;
+  transform-origin: right;
 }
 
 .slide-out {
@@ -29,5 +31,5 @@
   width: 100%;
   height: 100vh;
   background: black;
-  transform-origin: top;
+  transform-origin: left;
 }

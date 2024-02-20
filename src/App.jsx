@@ -1,7 +1,8 @@
 import "./App.css";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { Suspense } from "react";
-import Navbar from "./components/static/Navbar";
+import Header from "./components/static/Header";
+import ScrollToTop from "./components/static/ScrollToTop";
 import allRoutes from "./utils/routes";
 import { AnimatePresence } from "framer-motion";
 
@@ -10,7 +11,8 @@ function App() {
   return (
     <div className="App">
       <Suspense fallback={<h1>Loading...</h1>}>
-        <Navbar />
+        <Header />
+        <ScrollToTop/>
         <div className="routes-layout">
           <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>

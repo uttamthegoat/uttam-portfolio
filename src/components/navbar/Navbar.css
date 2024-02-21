@@ -1,9 +1,15 @@
-.navbar{
-    background-color: black;
+.navbar {
+  background-color: black;
+  z-index: 3;
+  background: rgba(17, 17, 17, 0.675);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.close-navbar{
-    color: white;
+.close-navbar {
+  color: white;
 }
-.nav-Items{
-    flex-grow: 1;
+.nav-Items {
+  flex-grow: 1;
 }

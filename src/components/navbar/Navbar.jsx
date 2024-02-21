@@ -26,7 +26,7 @@ const Navbar = () => {
           animate={
             isSidebarOpen ? { x: 0, opacity: 1 } : { x: "-100%", opacity: 0 }
           }
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           onClick={toggleSidebar}
         >
           <FontAwesomeIcon

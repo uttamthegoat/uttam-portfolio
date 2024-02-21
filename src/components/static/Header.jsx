@@ -31,7 +31,6 @@ const Header = () => {
       className="header fixed"
     >
       <motion.div
-        whileHover={{ scale: 1.1 }}
         initial={{ y: -10, opacity: 0.2 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.5, ease: "easeInOut" }}
@@ -44,7 +43,7 @@ const Header = () => {
       <motion.div
         initial={{ y: -10, opacity: 0.2 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1.5, ease: "easeInOut" }}
+        transition={{ duration: 1, ease: "easeInOut" }}
         className="hamburger"
         onClick={toggleSidebar}
       >

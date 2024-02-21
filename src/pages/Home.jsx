@@ -1,12 +1,13 @@
-import transition from '../utils/transition'
+import HomeComponent from "../components/home/HomeComponent";
+import transition from "../utils/transition";
 
 const Home = () => {
   return (
     <div>
-      <h1 className="h1s">Home</h1>
+      <HomeComponent />
     </div>
   );
 };
 
-export default transition(Home)
+export default transition(Home);
 // export default Home;

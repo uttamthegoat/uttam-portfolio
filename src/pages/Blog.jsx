@@ -2,7 +2,7 @@ import transition from "../utils/transition";
 
 const Blog = () => {
   return (
-    <div>Blog</div>
+    <h1  className="h1s">Blog</h1>
   )
 }
 

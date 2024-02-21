@@ -3,11 +3,13 @@ import "./styles/Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { SidebarContext } from "../../context/sidebar";
 
 const Header = () => {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
+  const { toggleSidebar } = useContext(SidebarContext);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const prev = scrollY.getPrevious();
@@ -32,7 +34,7 @@ const Header = () => {
         whileHover={{ scale: 1.1 }}
         initial={{ y: -10, opacity: 0.2 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1.5, ease: 'easeInOut' }}
+        transition={{ duration: 1.5, ease: "easeInOut" }}
         className="brand"
       >
         <Link to={"/"} className="name-link cursor-pointer">
@@ -42,8 +44,9 @@ const Header = () => {
       <motion.div
         initial={{ y: -10, opacity: 0.2 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1.5, ease: 'easeInOut' }}
+        transition={{ duration: 1.5, ease: "easeInOut" }}
         className="hamburger"
+        onClick={toggleSidebar}
       >
         <FontAwesomeIcon icon={faBars} className="cursor-pointer" />
       </motion.div>

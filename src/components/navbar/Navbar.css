@@ -1,0 +1,9 @@
+.navbar{
+    background-color: black;
+}
+.close-navbar{
+    color: white;
+}
+.nav-Items{
+    flex-grow: 1;
+}

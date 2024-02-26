@@ -1,0 +1,27 @@
+.home-image {
+  position: absolute;
+  top: 30%;
+  left: 29%;
+}
+
+.landing--social {
+  font-size: 35px;
+  margin: 0 1rem;
+  transition: transform 0.5s;
+}
+
+@media (max-width: 425px) {
+  .home-image {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+  .home-image {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

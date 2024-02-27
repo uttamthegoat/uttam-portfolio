@@ -32,7 +32,7 @@ const AboutPage = () => {
           <img src={abtimg} alt="experienceImage" className="mx-auto" />
         </div>
       </div>
-      <div className="skills my-10">
+      <div className="skills my-10 mb-20">
         <h1 className="text-center font-bold text-5xl pb-10">Skills</h1>
         <Marquee
           gradient={false}
@@ -57,8 +57,8 @@ const AboutPage = () => {
             <img src={expimg} alt="experienceImage" className="mx-auto" />
           </div>
           <div className="w-7/12">
-            <h1 className="mx-auto w-8/12 font-bold text-5xl">Experience</h1>
-            <div className="mx-auto w-8/12 font-semibold text-3xl">
+            <h1 className="text-end w-full font-bold text-5xl mb-3">Experience</h1>
+            <div className="w-full">
               {experienceData.map((exp) => (
                 <ExperienceCard
                   key={exp.id}

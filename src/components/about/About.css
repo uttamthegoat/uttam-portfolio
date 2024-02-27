@@ -23,14 +23,17 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 90%;
-  height: 140px;
+  /* width: 90%; */
+  /* height: 140px; */
   padding: 1.5rem;
   border-radius: 20px;
   margin-bottom: 1.5rem;
   transition: background-color 200ms ease-in-out;
+  background-color: #91c58e;
 }
-
+.experience-card:hover {
+  background-color: #9fd49c;
+}
 .expcard-img {
   border-radius: 50%;
   width: 55px;

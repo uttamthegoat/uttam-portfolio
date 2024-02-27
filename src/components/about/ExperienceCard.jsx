@@ -1,4 +1,4 @@
-import expImgBlack from '../../assets/svg/experience/expImgBlack.svg';
+import expImgBlack from "../../assets/svg/experience/expImgBlack.svg";
 
 /* eslint-disable react/prop-types */
 const ExperienceCard = ({ id, company, jobtitle, duration }) => {
@@ -8,9 +8,9 @@ const ExperienceCard = ({ id, company, jobtitle, duration }) => {
         <img src={expImgBlack} alt="" />
       </div>
       <div className="experience-details">
-        <h6>{duration}</h6>
-        <h4>{jobtitle}</h4>
-        <h5>{company}</h5>
+        <h6 className="font-semibold">{duration}</h6>
+        <h4 className="font-bold text-3xl">{jobtitle}</h4>
+        <h5 className="font-bold text-3xl">{company}</h5>
       </div>
     </div>
   );

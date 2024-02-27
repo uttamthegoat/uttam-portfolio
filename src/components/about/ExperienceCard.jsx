@@ -1,11 +1,17 @@
 import expImgBlack from "../../assets/svg/experience/expImgBlack.svg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 /* eslint-disable react/prop-types */
 const ExperienceCard = ({ id, company, jobtitle, duration }) => {
   return (
-    <div key={id} className={`experience-card`}>
+    <div key={id} className={`experience-card shadow-xl shadow-gray-400 sm:p-6 p-2`}>
       <div className="expcard-img">
-        <img src={expImgBlack} alt="" />
+        <LazyLoadImage
+          effect="opacity"
+          src={expImgBlack}
+          alt=""
+          loading="lazy"
+        />
       </div>
       <div className="experience-details">
         <h6 className="font-semibold">{duration}</h6>

@@ -9,13 +9,15 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { socialsData } from "../../data/socialsData";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const HomeComponent = () => {
   return (
     <div className="relative w-full flex flex-col md:flex-row">
       {/* image */}
       <div className="home-image hidden md:block md:w-[400px] md:h-[400px] absolute rounded-full">
-        <img
+        <LazyLoadImage
+          effect="opacity"
           src={headerData.image}
           alt="profileImage"
           className="rounded-full"
@@ -24,7 +26,8 @@ const HomeComponent = () => {
       {/* left */}
       <div className="w-full h-[80vh] md:w-[40%] flex items-end relative">
         <div className="home-image md:hidden w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] absolute rounded-full">
-          <img
+          <LazyLoadImage
+            effect="opacity"
             src={headerData.image}
             alt="profileImage"
             className="rounded-full"

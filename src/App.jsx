@@ -2,6 +2,7 @@ import "./App.css";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { Suspense } from "react";
 import Header from "./components/static/Header";
+import Footer from "./components/static/Footer";
 import Navbar from "./components/navbar/Navbar";
 import ScrollToTop from "./components/static/ScrollToTop";
 import allRoutes from "./utils/routes";
@@ -11,7 +12,7 @@ import { SidebarProvider } from "./context/sidebar";
 function App() {
   const location = useLocation();
   return (
-    <div className="App">
+    <div className="App flex flex-col">
       <SidebarProvider>
         <Suspense fallback={<h1>Loading...</h1>}>
           <Header />
@@ -31,6 +32,7 @@ function App() {
               </Routes>
             </AnimatePresence>
           </div>
+          <Footer />
         </Suspense>
       </SidebarProvider>
     </div>

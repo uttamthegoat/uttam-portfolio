@@ -1,7 +1,12 @@
+import AboutPage from "../components/about/AboutPage";
 import transition from "../utils/transition";
 
 const About = () => {
-  return <h1 className="h1s">About</h1>;
+  return (
+    <div>
+      <AboutPage />
+    </div>
+  );
 };
 
 export default transition(About);

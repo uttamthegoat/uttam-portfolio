@@ -22,7 +22,7 @@ const HomeComponent = () => {
         />
       </div>
       {/* left */}
-      <div className="w-full h-[100vh] md:w-[40%] flex items-end relative">
+      <div className="w-full h-[80vh] md:w-[40%] flex items-end relative">
         <div className="home-image md:hidden w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] absolute rounded-full">
           <img
             src={headerData.image}
@@ -49,7 +49,7 @@ const HomeComponent = () => {
         </div>
       </div>
       {/* right */}
-      <div className="w-full md:w-[60%] bg-black md:h-[100vh] flex flex-col justify-center items-center text-white py-8">
+      <div className="w-full md:w-[60%] bg-black md:h-[80vh] flex flex-col justify-center items-center text-white py-8">
         <div className="text-white w-11/12 sm:8/12 md:w-6/12 px-2 md:px-0">
           <h1 className="text-gray-400 text-xl sm:text-3xl font-semibold mb-2">
             {headerData.title}

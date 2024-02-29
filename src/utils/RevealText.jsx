@@ -3,7 +3,7 @@
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useRef, useEffect } from "react";
 
-const RevealText = ({ children, delay }) => {
+const RevealText = ({ children, delay, color }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -24,7 +24,7 @@ const RevealText = ({ children, delay }) => {
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.5, delay: delay+0.35 }}
+        transition={{ duration: 0.5, delay: delay+0.25 }}
       >
         {children}
       </motion.div>
@@ -42,7 +42,7 @@ const RevealText = ({ children, delay }) => {
           bottom: 4,
           left: 0,
           right: 0,
-          background: "black",
+          background: color||"black",
           zIndex: 1,
         }}
       />

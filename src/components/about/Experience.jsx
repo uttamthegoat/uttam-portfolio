@@ -1,10 +1,9 @@
-import {
-  LazyLoadComponent,
-  LazyLoadImage,
-} from "react-lazy-load-image-component";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import ExperienceCard from "./ExperienceCard";
 import { experienceData } from "../../data/experienceData";
 import expimg from "../../assets/svg/experience/expBlack.svg";
+import RevealText from "../../utils/RevealText";
+import { ScrollRevealUpFade } from "../../utils/ScrollReveal";
 
 const Experience = () => {
   return (
@@ -19,19 +18,21 @@ const Experience = () => {
           />
         </div>
         <div className="w-full md:w-7/12">
-          <h1 className="text-center md:text-end w-full font-bold text-5xl mb-6 md:mb-3">
-            Experience
-          </h1>
+          <RevealText delay={0.6}>
+            <h1 className="text-center md:text-end w-full font-bold text-5xl mb-6 md:mb-3">
+              Experience
+            </h1>
+          </RevealText>
           <div className="w-full">
             {experienceData.map((exp) => (
-              <LazyLoadComponent key={exp.id}>
+              <ScrollRevealUpFade key={exp.id}>
                 <ExperienceCard
                   id={exp.id}
                   jobtitle={exp.jobtitle}
                   company={exp.company}
                   duration={exp.duration}
                 />
-              </LazyLoadComponent>
+              </ScrollRevealUpFade>
             ))}
           </div>
         </div>

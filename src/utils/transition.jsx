@@ -1,7 +1,7 @@
+/* eslint-disable react/display-name */
 import { motion } from "framer-motion";
 
 const transition = (OgComponent) => {
-  // eslint-disable-next-line react/display-name
   return () => (
     <>
       <OgComponent />
@@ -20,7 +20,7 @@ const transition = (OgComponent) => {
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       />
     </>
-  )
+  );
 };
 
 export default transition;

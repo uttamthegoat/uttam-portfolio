@@ -1,7 +1,8 @@
 import transition from "../utils/transition";
+import EducationPage from "../components/education/Education";
 
 const Education = () => {
-  return <h1 className="h1s">Education</h1>;
+  return <EducationPage />;
 };
 
 export default transition(Education);

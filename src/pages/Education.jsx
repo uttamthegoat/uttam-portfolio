@@ -6,4 +6,3 @@ const Education = () => {
 };
 
 export default transition(Education);
-// export default Education;

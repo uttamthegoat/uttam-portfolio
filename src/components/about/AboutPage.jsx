@@ -15,20 +15,22 @@ const AboutPage = () => {
         <div className="background w-full flex md:flex-row flex-col-reverse items-center md:justify-around py-10">
           <div className="background-text w-11/12 md:w-6/12">
             <RevealText delay={0.4}>
-              <h1 className="text-5xl font-extrabold pt-4 mb-5 md:w-8/12 md:mx-auto text-center md:text-start">
+              <h1 className="text-5xl font-extrabold pt-4 mb-5 md:w-8/12 text-center md:text-start">
                 About <span style={{ color: "#7a7a7a" }}>Me</span>
               </h1>
             </RevealText>
             <RevealText delay={0.4}>
-              <p className="text-4xl font-bold md:w-8/12 mb-4">I'm Uttam.</p>
+              <p className="text-4xl font-bold md:w-8/12 text-center md:text-start mb-4">
+                I'm Uttam.
+              </p>
             </RevealText>
             <RevealText delay={0.4}>
-              <p className="text-2xl font-semibold mb-3">
+              <p className="text-2xl font-semibold mb-3 md:text-start text-center">
                 Full Stack Developer and Aspiring Software Engineer
               </p>
             </RevealText>
             <RevealText delay={0.4}>
-              <p className="text-xl sm:text-2xl italic">
+              <p className="text-xl sm:text-2xl italic text-center md:text-start">
                 "In the dance of life, every step is a lesson, and every pause,
                 a reflection."
               </p>
@@ -71,15 +73,26 @@ const AboutPage = () => {
       <ScrollRevealUpFade>
         <div className="w-11/12 mx-auto">
           <RevealText delay={0.4}>
-            <p className="text-2xl">
-              Hi! I am Uttam, an enthusiastic engineering student with a passion
-              for web development. Constantly driven by the desire to explore
-              new horizons, I find joy in unraveling the intricacies of
-              technology. When not immersed in coding, I embark on thrilling
-              trekking adventures, seeking the perfect blend of challenge and
-              serenity. Eager to merge my love for innovation with the vast
-              possibilities of the web, I am on a journey to carve my niche in
-              the ever-evolving world of technology.
+            <p className="text-2xl text-justify">
+              <span className="text-transparent hidden sm:inline">
+                empty space here
+              </span>
+              <span className="text-transparent sm:hidden inline">
+                empty
+              </span>
+              Greetings,{" "}
+              <span className="text-blue-800 font-semibold">I am Uttam</span>, a
+              third-year Computer Science & Engineering student at{" "}
+              <span className="text-blue-800 font-semibold">
+                Mangalore Institute of Technology & Engineering, Mangalore
+              </span>
+              . Proficient in core programming languages such as C, Java, and
+              Python, I excel in Full Stack Development. Possessing a robust
+              foundation in mathematics and adept problem-solving skills, I
+              continually enhance my capabilities through internships and
+              projects. My passion lies in Software Engineering and Full Stack
+              Development, where I actively pursue challenges, set ambitious
+              learning goals, and remain attuned to emerging technologies.
             </p>
           </RevealText>
         </div>

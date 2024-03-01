@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'AquireFont';
-  src: url('./assets/fonts/Aquire/AquireBold-8Ma60.otf'); 
-  src: url('./assets/fonts/Aquire/AquireBold-8Ma60.otf') format('embedded-opentype'), 
-       url('./assets/fonts/Aquire/AquireBold-8Ma60.otf')  format('truetype'), 
+  font-family: "AquireFont";
+  src: url("./assets/fonts/Aquire/AquireBold-8Ma60.otf");
+  src: url("./assets/fonts/Aquire/AquireBold-8Ma60.otf")
+      format("embedded-opentype"),
+    url("./assets/fonts/Aquire/AquireBold-8Ma60.otf") format("truetype");
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   color: black;
 }
-
 
 body {
   margin: 0;
@@ -23,8 +23,11 @@ body {
   width: calc(100vw - 10px);
   overflow-x: auto;
   background: #c6d5c6;
+  /* user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; */
 }
-
 
 ::-webkit-scrollbar {
   width: 10px;

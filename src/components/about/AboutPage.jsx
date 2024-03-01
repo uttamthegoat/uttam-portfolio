@@ -2,15 +2,13 @@
 import "./About.css";
 import abtimg from "../../assets/svg/about/blueTheme-boy.svg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import Skills from "./Skills";
-import Experience from "./Experience";
 import RevealText from "../../utils/RevealText";
 import { ScrollRevealUpFade } from "../../utils/ScrollReveal";
 import { contactsData } from "../../data/contactsData";
 
 const AboutPage = () => {
   return (
-    <div className="About pt-5 pb-10">
+    <div className="about pt-5 pb-10" id="about">
       <ScrollRevealUpFade>
         <div className="background w-full flex md:flex-row flex-col-reverse items-center md:justify-around py-10">
           <div className="background-text w-11/12 md:w-6/12">
@@ -77,9 +75,7 @@ const AboutPage = () => {
               <span className="text-transparent hidden sm:inline">
                 empty space here
               </span>
-              <span className="text-transparent sm:hidden inline">
-                empty
-              </span>
+              <span className="text-transparent sm:hidden inline">empty</span>
               Greetings,{" "}
               <span className="text-blue-800 font-semibold">I am Uttam</span>, a
               third-year Computer Science & Engineering student at{" "}
@@ -96,14 +92,6 @@ const AboutPage = () => {
             </p>
           </RevealText>
         </div>
-      </ScrollRevealUpFade>
-
-      <ScrollRevealUpFade>
-        <Skills />
-      </ScrollRevealUpFade>
-
-      <ScrollRevealUpFade>
-        <Experience />
       </ScrollRevealUpFade>
     </div>
   );

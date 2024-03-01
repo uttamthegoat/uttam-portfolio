@@ -13,14 +13,15 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { UpFadeWithDelay, ScrollRevealUpFade } from "../../utils/ScrollReveal";
 import RevealText from "../../utils/RevealText";
 import { motion } from "framer-motion";
+import HomeScroll from "./HomeScroll";
 
 const HomeComponent = () => {
   return (
-    <div className="relative w-full flex flex-col md:flex-row">
+    <div className="home relative w-full flex flex-col md:flex-row border-b-2 border-black">
       {/* image */}
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
-        whileInView={{ opacity: 1, scale: 1 }}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
         className="home-image hidden md:block md:w-[400px] md:h-[400px] absolute rounded-full"
       >
@@ -32,7 +33,7 @@ const HomeComponent = () => {
         />
       </motion.div>
       {/* left */}
-      <div className="w-full h-[80vh] md:w-[40%] flex items-end relative">
+      <div className="w-full h-[85vh] md:w-[40%] flex items-end relative">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -76,19 +77,20 @@ const HomeComponent = () => {
         </div>
       </div>
       {/* right */}
-      <div className="w-full md:w-[60%] bg-black md:h-[80vh] flex flex-col justify-center items-center text-white py-8">
+      <div className="w-full md:w-[60%] bg-black md:h-[85vh] flex flex-col justify-center items-center text-white py-8">
         <div className="text-white w-11/12 sm:8/12 md:w-6/12 px-2 md:px-0">
-          <RevealText delay={0.4} color={"#c6d5c6"}>
-            <h1 className="text-gray-400 text-xl sm:text-3xl font-semibold mb-2">
+          <RevealText delay={0.3} color={"#c6d5c6"}>
+            {/* <h1 className="text-gray-400 text-xl sm:text-3xl font-semibold mb-2">
               {headerData.title}
-            </h1>
+            </h1> */}
+            <HomeScroll />
           </RevealText>
-          <RevealText delay={0.4} color={"#c6d5c6"}>
+          <RevealText delay={0.3} color={"#c6d5c6"}>
             <p className="text-white text-4xl sm:text-6xl font-bold mb-5">
               {headerData.name}
             </p>
           </RevealText>
-          <RevealText delay={0.4} color={"#c6d5c6"}>
+          <RevealText delay={0.3} color={"#c6d5c6"}>
             <p
               className="text-gray-300 font-bold"
               style={{ fontSize: "20px", fontWeight: "500" }}
@@ -96,14 +98,14 @@ const HomeComponent = () => {
               {headerData.desciption}
             </p>
           </RevealText>
-          <div className="flex flex-col space-y-2 sm:space-y-0 sm:flex-row sm:justify-around md:justify-between mt-7 w-6/12 sm:w-full mx-auto">
+          <div className="flex flex-col items-center gap-y-3 sm:gap-y-0 sm:space-y-0 sm:flex-row sm:justify-around md:justify-between mt-7 w-6/12 sm:w-full mx-auto">
             <ScrollRevealUpFade>
               <a
                 href={headerData.resumePdf}
                 download="resume"
                 target="_blank"
                 rel="noreferrer"
-                className="cursor-pointer text-white border-4 rounded-full border-green-200 px-2 py-2 font-semibold md:w-[160px] hover:bg-green-200 hover:text-black text-center"
+                className="cursor-pointer text-white border-4 rounded-full border-green-200 px-2 py-2 font-semibold inline-block w-[125px] md:w-[160px] hover:bg-green-200 hover:text-black text-center"
               >
                 Download CV
               </a>
@@ -111,7 +113,7 @@ const HomeComponent = () => {
             <ScrollRevealUpFade>
               <Link
                 to={"/contact"}
-                className="cursor-pointer text-black border-4 rounded-full border-green-200 bg-green-200 px-2 py-2 font-semibold text:lg sm:text-xl md:w-[160px] text-center hover:bg-black hover:text-green-200"
+                className="cursor-pointer text-black border-4 rounded-full border-green-200 bg-green-200 px-2 py-2 font-semibold text:lg sm:text-xl w-[125px] inline-block md:w-[160px] text-center hover:bg-black hover:text-green-200"
               >
                 Contact
               </Link>

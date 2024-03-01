@@ -4,10 +4,11 @@ import { experienceData } from "../../data/experienceData";
 import expimg from "../../assets/svg/experience/expBlack.svg";
 import RevealText from "../../utils/RevealText";
 import { ScrollRevealUpFade } from "../../utils/ScrollReveal";
+import "./Experience.css";
 
 const Experience = () => {
   return (
-    <div className="experience px-2 md:px-0">
+    <div className="experience px-2 md:px-0" id="experience">
       <div className="flex md:flex-row flex-col items-center md:justify-around">
         <div className="experience-image w-6/12 md:w-3/12">
           <LazyLoadImage

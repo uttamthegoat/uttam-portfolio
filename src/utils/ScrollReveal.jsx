@@ -8,6 +8,7 @@ export const ScrollRevealUpFade = ({ children }) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.5 }}
       viewport={{ once: true }}
+      // style={{width:"100%", margin:"auto"}}
     >
       {children}
     </motion.div>
@@ -18,7 +19,7 @@ export const UpFadeWithDelay = ({ children, id }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 75 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.15 * id }}
       viewport={{ once: true }}
     >

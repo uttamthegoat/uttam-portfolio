@@ -1,5 +1,4 @@
 import AboutPage from "../components/about/AboutPage";
-import transition from "../utils/transition";
 
 const About = () => {
   return (
@@ -9,4 +8,4 @@ const About = () => {
   );
 };
 
-export default transition(About);
+export default About;

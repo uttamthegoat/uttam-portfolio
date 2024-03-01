@@ -1,7 +1,7 @@
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { navbarItems } from "../../assets/constants";
-import { Link } from "react-router-dom";
+import { NavHashLink as NavLink } from "react-router-hash-link";
 import "./Navbar.css";
 import { motion } from "framer-motion";
 import { useContext } from "react";
@@ -60,14 +60,14 @@ const Navbar = () => {
             }
             className="w-7/12 block mb-10 rounded-lg border-2 border-green-200 py-3 px-4 text-center cursor-pointer hover:bg-green-200 text-green-200 hover:text-black font-bold"
           >
-            <Link
+            <NavLink
               key={link.id}
               to={link.to}
               className=""
               onClick={toggleSidebar}
             >
               {link.navItem}
-            </Link>
+            </NavLink>
           </motion.div>
         ))}
       </div>

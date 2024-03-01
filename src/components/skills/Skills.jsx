@@ -17,8 +17,8 @@ const Skills = () => {
   };
   return (
     <ScrollRevealUpFade>
-      <div className="skills mt-56 mb-20" id="skills">
-        <div className="flex justify-center">
+      <div className="skills mt-40 mb-20" id="skills">
+        <div className="flex justify-center mb-16">
           <div>
             <motion.div
               initial={{ x: -200, opacity: 0 }}
@@ -43,7 +43,7 @@ const Skills = () => {
         <Marquee
           gradient={false}
           speed={80}
-          pauseOnHover={true}
+          // pauseOnHover={true}
           pauseOnClick={true}
           delay={0}
           play={true}
@@ -51,7 +51,7 @@ const Skills = () => {
         >
           {skillsData.map((skill, id) => (
             <ScrollRevealZoomIn key={id}>
-              <div className="skill--box" key={id} style={skillBoxStyle}>
+              <div className="skill--box" key={id} style={skillBoxStyle} title={skill}>
                 <LazyLoadImage
                   effect="opacity"
                   src={skillsImage(skill)}

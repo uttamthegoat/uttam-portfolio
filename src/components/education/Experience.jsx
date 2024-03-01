@@ -1,42 +1,23 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import ExperienceCard from "./ExperienceCard";
 import { experienceData } from "../../data/experienceData";
-import expimg from "../../assets/svg/experience/expBlack.svg";
-import RevealText from "../../utils/RevealText";
-import { ScrollRevealUpFade } from "../../utils/ScrollReveal";
 import "./Experience.css";
 
 const Experience = () => {
   return (
-    <div className="experience px-2 md:px-0" id="experience">
-      <div className="flex md:flex-row flex-col items-center md:justify-around">
-        <div className="experience-image w-6/12 md:w-3/12">
-          <LazyLoadImage
-            effect="opacity"
-            src={expimg}
-            alt="experienceImage"
-            className="mx-auto"
+    <div className="experience md:w-1/2" id="experience">
+      <div>
+        <h1 className="font-bold text-5xl text-center text-purple-700 mb-20 mt-20 md:mt-0">Experience</h1>
+      </div>
+      <div className="flex flex-col gap-12">
+        {experienceData.map((education) => (
+          <ExperienceCard
+            key={education.id}
+            duration={education.duration}
+            jobtitle={education.jobtitle}
+            company={education.company}
+            description={education.description}
           />
-        </div>
-        <div className="w-full md:w-7/12">
-          <RevealText delay={0.6}>
-            <h1 className="text-center md:text-end w-full font-bold text-5xl mb-6 md:mb-3">
-              Experience
-            </h1>
-          </RevealText>
-          <div className="w-full">
-            {experienceData.map((exp) => (
-              <ScrollRevealUpFade key={exp.id}>
-                <ExperienceCard
-                  id={exp.id}
-                  jobtitle={exp.jobtitle}
-                  company={exp.company}
-                  duration={exp.duration}
-                />
-              </ScrollRevealUpFade>
-            ))}
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ export const educationData = [
   },
   {
     id: 2,
-    institution: "Karkala Jnanasudha Pre-University College.",
+    institution: "Karkala Jnanasudha Pre-University College",
     course: "Pre-University Education",
     startYear: "2019",
     endYear: "2021",

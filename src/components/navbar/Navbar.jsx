@@ -65,6 +65,9 @@ const Navbar = () => {
               to={link.to}
               className=""
               onClick={toggleSidebar}
+              smooth={true}
+              spy="true"
+              duration={2000}
             >
               {link.navItem}
             </NavLink>

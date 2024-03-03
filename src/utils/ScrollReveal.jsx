@@ -19,7 +19,20 @@ export const UpFadeWithDelay = ({ children, id }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 75 }}
-      animate={{ opacity: 1, y: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.15 * id }}
+      viewport={{ once: true }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+export const UpFadeWithDelayProjects = ({ children, id }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: "100%" }}
+      whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.15 * id }}
       viewport={{ once: true }}
     >

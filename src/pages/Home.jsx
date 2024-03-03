@@ -6,6 +6,7 @@ import transition from "../utils/transition";
 import EducationAndExp from "../components/education/EducationAndExp";
 import Projects from "../components/projects/Projects";
 import { useEffect } from "react";
+import ContactPage from "../components/contact/ContactPage";
 
 const Home = () => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const Home = () => {
       : { x: 0, y: 0 };
     window.scrollTo(x, y);
   }, []);
+
   return (
     <div>
       <HomeComponent />
@@ -22,6 +24,7 @@ const Home = () => {
       <Skills />
       <EducationAndExp />
       <Projects />
+      <ContactPage />
     </div>
   );
 };

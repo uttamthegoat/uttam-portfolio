@@ -21,18 +21,18 @@ const Skills = () => {
         <div className="flex justify-center mb-16">
           <div>
             <motion.div
-              initial={{ x: -200, opacity: 0 }}
+              initial={{ x: "-100%", opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
+              transition={{ duration: 0.7, ease: "easeOut", delay:0.3 }}
               viewport={{ once: true }}
               className="mx-auto inline-block font-bold text-5xl pb-10"
             >
               Ski
             </motion.div>
             <motion.div
-              initial={{ x: 200, opacity: 0 }}
+              initial={{ x: "100%", opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
+              transition={{ duration: 0.7, ease: "easeOut", delay:0.3 }}
               viewport={{ once: true }}
               className="mx-auto inline-block font-bold text-5xl pb-10"
             >

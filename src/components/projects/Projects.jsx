@@ -1,19 +1,38 @@
 import { projectsData } from "../../data/projectsData";
 import { ProjectCard } from "./project-card/ProjectCard";
 import { NavHashLink } from "react-router-hash-link";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
     <div className="projects mb-32" id="projects">
       <div className="projects-heading py-5 mb-20">
         <h1 className="text-center text-5xl font-bold">
-          My <span className="text-purple-700">Projects</span>
+          <motion.div
+            initial={{ opacity: 0, y: "100%" }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="inline-block"
+          >
+            My
+          </motion.div>{" "}
+          <motion.div
+            initial={{ opacity: 0, y: "100%" }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="text-purple-700 inline-block"
+          >
+            Projects
+          </motion.div>
         </h1>
       </div>
       <div className="projects-content grid grid-cols-1 gap-y-7 sm:grid-cols-2 sm:gap-y-10 md:grid-cols-4 md:gap-y-0">
         {projectsData.map((project) => (
           <div key={project.id}>
             <ProjectCard
+              id={project.id}
               projectName={project.projectName}
               projectDesc={project.projectDesc}
               tags={project.tags}
@@ -25,7 +44,13 @@ const Projects = () => {
         ))}
       </div>
       <div className="more-projects mt-20">
-        <div className="mx-auto w-fit">
+        <motion.div
+          initial={{ opacity: 0, y: "100%" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          viewport={{ once: true }}
+          className="mx-auto w-fit"
+        >
           <NavHashLink
             to={"/all-projects"}
             className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-purple-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group"
@@ -67,7 +92,7 @@ const Projects = () => {
               More Projects
             </span>
           </NavHashLink>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

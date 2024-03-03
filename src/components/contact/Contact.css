@@ -1,0 +1,54 @@
+.detailsleft {
+  background-color: #9333ea;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.detailsleft:hover {
+  background-color: white;
+  transform: scale(1.2);
+}
+
+.detailsleft {
+  cursor: pointer;
+}
+.detailsright {
+  cursor: pointer;
+}
+
+.contact--social {
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 100%;
+  background-color: #9333ea;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.contact--social:hover {
+  background-color: white;
+  transform: scale(1.2);
+}
+
+.contact-form-label {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.contact-form-input {
+  outline: 0;
+  border: 1px solid;
+  padding: 5px 0px 5px 10px;
+  height: 58px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contact-form-input-msg {
+  outline: 0;
+  border: 1px solid;
+  padding: 10px 0px 5px 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}

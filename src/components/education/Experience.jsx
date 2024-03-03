@@ -8,7 +8,7 @@ const Experience = () => {
     <div className="experience md:w-1/2" id="experience">
       <div className="mb-20 mt-20 md:mt-0">
         <RevealText delay={0.4}>
-          <h1 className="font-bold text-5xl text-center text-purple-700 ">
+          <h1 className="font-bold text-5xl text-center text-purple-700 pb-3 ">
             Experience
           </h1>
         </RevealText>

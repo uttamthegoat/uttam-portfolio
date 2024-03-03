@@ -1,11 +1,11 @@
 import ContactForm from "./ContactForm";
 import { motion } from "framer-motion";
-import './Contact.css';
+import "./Contact.css";
 
 const ContactPage = () => {
   return (
-    <div className="contact mb-32" id="contact">
-      <div className="contact-heading mb-20">
+    <div className="contact mb-40" id="contact">
+      <div className="contact-heading mb-20 md:mb-32">
         <motion.div
           initial={{ opacity: 0, y: "100%" }}
           whileInView={{ opacity: 1, y: 0 }}

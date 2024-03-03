@@ -29,9 +29,9 @@ const ContactForm = () => {
     }
   };
   return (
-    <div className="flex">
-      <div className="w-1/2">
-        <form className="w-9/12 mx-auto" onSubmit={handleSubmit}>
+    <div className="flex flex-col md:flex-row gap-y-20 md:gap-y-20">
+      <div className="md:w-1/2">
+        <form className="w-11/12 sm:w-9/12 mx-auto" onSubmit={handleSubmit}>
           <div className="flex flex-col mb-8">
             <label htmlFor="visitorName" className="contact-form-label">
               Name
@@ -93,8 +93,8 @@ const ContactForm = () => {
         </form>
       </div>
 
-      <div className="w-1/2">
-        <div className="w-9/12 mx-auto">
+      <div className="md:w-1/2">
+        <div className="w-11/12 md:w-9/12 mx-auto">
           <div className="flex gap-6 mb-10">
             <a
               href={`mailto:${contactsData.email}`}
@@ -124,14 +124,14 @@ const ContactForm = () => {
             </a>
           </div>
           <div className="flex gap-6">
-            <div className="detailsleft rounded-full bg-purple-600 w-16 h-12 flex justify-center items-center cursor-default">
+            <div className="detailsleft rounded-full bg-purple-600 w-[8rem] sm:w-16 h-12 flex justify-center items-center cursor-default">
               <HiOutlineLocationMarker className="text-2xl" />
             </div>
             <div className="detailsright text-black text-2xl font-semibold pt-2">
               {contactsData.address}
             </div>
           </div>
-          <div className="contact-socials flex justify-between mt-32">
+          <div className="contact-socials flex justify-center gap-3 md:gap-0 md:justify-between mt-20 sm:mt-32 flex-wrap">
             <a
               href={socialsData.twitter}
               target="_blank"

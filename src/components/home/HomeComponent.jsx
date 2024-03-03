@@ -17,7 +17,7 @@ import { NavHashLink } from "react-router-hash-link";
 
 const HomeComponent = () => {
   return (
-    <div className="home relative w-full flex flex-col md:flex-row border-b-2 border-black">
+    <div className="home relative w-full flex flex-col md:flex-row border-b-2 border-black" id="home">
       {/* image */}
       <motion.div
         initial={{ opacity: 0, scale: 0 }}

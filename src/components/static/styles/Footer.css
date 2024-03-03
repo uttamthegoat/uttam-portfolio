@@ -1,0 +1,20 @@
+.footer-connect {
+  font-size: 35px;
+  transition: transform 0.1s;
+}
+.footer-connect:hover {
+  transform: scale(1.2);
+}
+
+.footer-name{
+    font-size: 66px;
+    font-weight: 800;
+    font-family: "Aquire";
+}
+.Footer{
+    border-radius: 10px 10px 0 0;
+    background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 20px 32px 0 inset rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}

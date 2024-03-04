@@ -16,6 +16,7 @@
 }
 
 .contact--social {
+  display: block;
   font-size: 30px;
   padding: 10px;
   border-radius: 100%;

@@ -1,5 +1,7 @@
 /* eslint-disable no-undef */
-const nodemailer = require("nodemailer");
+import nodemailer from "nodemailer";
+import { config } from "dotenv";
+config();
 
 const generateMail = async (name, email, message) => {
   const transporter = nodemailer.createTransport({
@@ -35,4 +37,4 @@ ${name}`,
   await transporter.sendMail(mailOptions);
 };
 
-module.exports = generateMail;
+export default generateMail;

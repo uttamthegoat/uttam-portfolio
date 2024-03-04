@@ -1,10 +1,10 @@
-/* eslint-disable no-undef */
-const express = require("express");
-const cors = require("cors");
-const dotenv = require("dotenv");
-const generateMail = require("./utils/sendMail");
-dotenv.config();
+import express, { json } from "express";
+import cors from "cors";
+import { config } from "dotenv";
+import generateMail from "./utils/sendMail";
+config();
 
+// eslint-disable-next-line no-undef
 const port = process.env.PORT;
 
 const app = express();
@@ -15,7 +15,7 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-app.use(express.json());
+app.use(json());
 
 app.get("/", (req, res) => {
   res.send("Welcome to BuyBox server!");

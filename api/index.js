@@ -10,8 +10,8 @@ const port = process.env.PORT;
 const app = express();
 
 const corsOptions = {
-  origin: "http://localhost:5173",
-  // origin: "https://buy-box.netlify.app",
+  // origin: "http://localhost:5173",
+  origin: "https://uttamthegoat.netlify.app",
 };
 
 app.use(cors(corsOptions));

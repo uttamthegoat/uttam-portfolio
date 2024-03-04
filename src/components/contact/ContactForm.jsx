@@ -16,7 +16,7 @@ import { contactsData } from "../../data/contactsData";
 import { motion } from "framer-motion";
 import { UpFadeWithDelay } from "../../utils/ScrollReveal";
 
-const url = "http://localhost:5000";
+const url = "https://uttamthegoat.vercel.app";
 
 const ContactForm = () => {
   const [visitor, setVisitor] = useState({ name: "", email: "", message: "" });

@@ -32,8 +32,7 @@ export const ProjectCard = ({
     <UpFadeWithDelayProjects id={id}>
       <div
         key={id}
-        className="project-card relative shadow-xl shadow-gray-500 flex flex-col items-center bg-white rounded-xl mx-auto"
-        style={{ width: "304px" }}
+        className="project-card relative shadow-xl shadow-gray-500 flex flex-col items-center bg-white rounded-xl mx-auto w-[304px] md:w-[304px] sm:w-8/12"
         onMouseEnter={handleHover}
         onMouseLeave={handleHover}
       >

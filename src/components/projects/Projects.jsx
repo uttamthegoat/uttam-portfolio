@@ -28,7 +28,7 @@ const Projects = () => {
           </motion.div>
         </h1>
       </div>
-      <div className="projects-content grid grid-cols-1 gap-y-7 sm:grid-cols-2 sm:gap-y-10 md:grid-cols-4 md:gap-y-0">
+      <div className="projects-content grid grid-cols-1 gap-y-7 sm:grid-cols-1 sm:gap-y-10 md:grid-cols-4 md:gap-y-0">
         {projectsData.map((project) => (
           <div key={project.id}>
             <ProjectCard

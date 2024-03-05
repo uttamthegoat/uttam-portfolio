@@ -17,7 +17,10 @@ import { NavHashLink } from "react-router-hash-link";
 
 const HomeComponent = () => {
   return (
-    <div className="home relative w-full flex flex-col md:flex-row border-b-2 border-black" id="home">
+    <div
+      className="home relative w-full flex flex-col md:flex-row border-b-2 border-black"
+      id="home"
+    >
       {/* image */}
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
@@ -33,12 +36,12 @@ const HomeComponent = () => {
         />
       </motion.div>
       {/* left */}
-      <div className="w-full h-[85vh] md:w-[40%] flex items-end relative">
+      <div className="w-full h-[100vh] md:w-[40%] flex items-end relative">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="home-image md:hidden w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] absolute rounded-full"
+          className="home-image md:hidden w-8/12 h-auto sm:w-[300px] sm:h-[300px] absolute rounded-full"
           style={{ translateX: "-50%", translateY: "-50%" }}
         >
           <LazyLoadImage
@@ -77,7 +80,7 @@ const HomeComponent = () => {
         </div>
       </div>
       {/* right */}
-      <div className="w-full md:w-[60%] bg-black md:h-[85vh] flex flex-col justify-center items-center text-white py-8">
+      <div className="w-full md:w-[60%] bg-black md:h-[100vh] flex flex-col justify-center items-center text-white py-8">
         <div className="text-white w-11/12 sm:8/12 md:w-6/12 px-2 md:px-0">
           <RevealText delay={0.3} color={"#c6d5c6"}>
             <HomeScroll />

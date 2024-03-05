@@ -7,6 +7,7 @@ import EducationAndExp from "../components/education/EducationAndExp";
 import Projects from "../components/projects/Projects";
 import { useEffect } from "react";
 import ContactPage from "../components/contact/ContactPage";
+import Header from "../components/static/Header";
 
 const Home = () => {
   useEffect(() => {
@@ -19,6 +20,8 @@ const Home = () => {
 
   return (
     <div>
+      <Header />
+
       <HomeComponent />
       <AboutPage />
       <Skills />

@@ -1,7 +1,6 @@
 import "./App.css";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { Suspense } from "react";
-import Header from "./components/static/Header";
 import Footer from "./components/static/Footer";
 import Navbar from "./components/navbar/Navbar";
 import ScrollToTop from "./components/static/ScrollToTop";
@@ -15,7 +14,7 @@ function App() {
     <div className="App flex flex-col">
       <SidebarProvider>
         <Suspense fallback={<h1>Loading...</h1>}>
-          <Header />
+          {/* <Header /> */}
           <Navbar />
           <ScrollToTop />
           <div className="routes-layout">

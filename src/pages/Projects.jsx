@@ -1,8 +1,12 @@
+import AllProjects from "../components/projects/AllProjects";
 import transition from "../utils/transition";
 
 const Projects = () => {
-  return <h1 className="h1s">Projects</h1>;
+  return (
+    <div>
+      <AllProjects />
+    </div>
+  );
 };
 
 export default transition(Projects);
-// export default Projects;

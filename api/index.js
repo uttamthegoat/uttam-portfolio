@@ -21,10 +21,10 @@ app.get("/", (req, res) => {
   res.send("Welcome to BuyBox server!");
 });
 
-app.post("/send-email", (req, res) => {
+app.post("/send-email", async (req, res) => {
   try {
     const { name, email, message } = req.body;
-    generateMail(name, email, message);
+    await generateMail(name, email, message);
     res.status(200).json({ success: true, message: "Mail successfully sent!" });
   } catch (error) {
     console.log(error.message);

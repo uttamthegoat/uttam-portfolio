@@ -2,6 +2,7 @@ import one from "../assets/png/projects/one.png";
 import two from "../assets/png/projects/two.png";
 import three from "../assets/png/projects/three.png";
 import four from "../assets/png/projects/four.png";
+import five from "../assets/png/projects/five.png";
 
 export const projectsData = [
   {
@@ -43,6 +44,16 @@ export const projectsData = [
     code: "https://github.com/uttamthegoat/movie-junkie",
     demo: "https://movie-junkie.netlify.app/",
     image: four,
+  },
+  {
+    id: 5,
+    projectName: "Film Booking System",
+    projectDesc:
+    "Built a movie booking system with MERN stack (MongoDB, Express.js, React, Node.js) and Material-UI for a DBMS mini project, facilitating seamless movie ticket reservations and management.",
+    tags: ["MERN", "Material UI"],
+    code: "https://github.com/uttamthegoat/dbms-mini-project",
+    // demo: "https://movie-junkie.netlify.app/",
+    image: five,
   },
 ];
 

@@ -23,7 +23,7 @@ const AllProjects = () => {
         </div>
       </div>
       <div className="all-projects-body py-20">
-        <div className="grid grid-cols-1 gap-y-7 sm:grid-cols-1 sm:gap-y-10 md:grid-cols-4 md:gap-y-0">
+        <div className="grid grid-cols-1 gap-y-7 sm:grid-cols-1 sm:gap-y-10 md:grid-cols-4 md:gap-y-8">
           {projectsData.map((project) => (
             <div key={project.id}>
               <ProjectCard

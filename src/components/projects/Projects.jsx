@@ -1,9 +1,13 @@
 import { projectsData } from "../../data/projectsData";
 import { ProjectCard } from "./project-card/ProjectCard";
-import { NavHashLink } from "react-router-hash-link";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Projects = () => {
+  const navigate = useNavigate();
+  const toAllProjects =() => { 
+    navigate("/all-projects")
+   }
   return (
     <div className="projects mb-32" id="projects">
       <div className="projects-heading py-5 mb-20">
@@ -28,7 +32,7 @@ const Projects = () => {
           </motion.div>
         </h1>
       </div>
-      <div className="projects-content grid grid-cols-1 gap-y-7 sm:grid-cols-1 sm:gap-y-10 md:grid-cols-4 md:gap-y-0">
+      <div className="projects-content grid grid-cols-1 gap-y-7 sm:grid-cols-1 sm:gap-y-10 md:grid-cols-4 md:gap-y-8">
         {projectsData.map((project) => (
           <div key={project.id}>
             <ProjectCard
@@ -51,8 +55,8 @@ const Projects = () => {
           viewport={{ once: true }}
           className="mx-auto w-fit"
         >
-          <NavHashLink
-            to={"/all-projects"}
+          <button
+            onClick={toAllProjects}
             className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-purple-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group"
           >
             <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-purple-600 group-hover:h-full"></span>
@@ -91,7 +95,7 @@ const Projects = () => {
             <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
               More Projects
             </span>
-          </NavHashLink>
+          </button>
         </motion.div>
       </div>
     </div>

@@ -5,6 +5,8 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import RevealText from "../../utils/RevealText";
 import { ScrollRevealUpFade } from "../../utils/ScrollReveal";
 import { contactsData } from "../../data/contactsData";
+import { TypeAnimation } from "react-type-animation";
+import { aboutSequence } from "../../assets/constants";
 
 const AboutPage = () => {
   return (
@@ -23,8 +25,14 @@ const AboutPage = () => {
               </p>
             </RevealText>
             <RevealText delay={0.4}>
-              <p className="text-2xl font-semibold mb-3 md:text-start text-center">
-                Full Stack Developer and Aspiring Software Engineer
+              <p className="text-xl sm:text-3xl font-semibold mb-3 md:text-start text-center">
+                <TypeAnimation
+                  sequence={aboutSequence}
+                  wrapper="span"
+                  speed={50}
+                  style={{ display: "inline-block" }}
+                  repeat={Infinity}
+                />
               </p>
             </RevealText>
             <RevealText delay={0.4}>

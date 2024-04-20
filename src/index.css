@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --green-theme-bg: #c6d5c6;
+  --blue-theme-bg: #8dbefe;
+}
+
 @font-face {
   font-family: "AquireFont";
   src: url("./assets/fonts/Aquire/AquireBold-8Ma60.otf");
@@ -22,7 +27,7 @@ body {
   width: 100vw;
   width: calc(100vw - 10px);
   overflow-x: auto;
-  background: #c6d5c6;
+  background: var(--green-theme-bg);
   /* user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;

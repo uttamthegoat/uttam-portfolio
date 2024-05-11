@@ -4,6 +4,7 @@ import three from "../assets/png/projects/three.png";
 import four from "../assets/png/projects/four.png";
 import five from "../assets/png/projects/five.png";
 import six from "../assets/png/projects/six.png";
+import seven from "../assets/png/projects/seven.png"
 
 export const projectsData = [
   {
@@ -55,6 +56,16 @@ export const projectsData = [
     code: "https://github.com/uttamthegoat/dbms-mini-project",
     // demo: "https://movie-junkie.netlify.app/",
     image: five,
+  },
+  {
+    id: 7,
+    projectName: "MusAngel",
+    projectDesc:
+      "Developed a dynamic music streaming website using WordPress, offering users an immersive experience to discover, stream, and enjoy their favorite music seamlessly within a user-friendly interface.",
+    tags: ["WordPress", "Elementor"],
+    // code: "https://github.com/uttamthegoat/inotes",
+    demo: "https://musangel.epizy.com/",
+    image: seven,
   },
   {
     id: 6,

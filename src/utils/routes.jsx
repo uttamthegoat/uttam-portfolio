@@ -2,7 +2,8 @@
 import { lazy } from "react";
 
 const Home = lazy(() => import("../pages/Home"));
-const Projects = lazy(() => import("../pages/Projects"));
+// const Projects = lazy(() => import("../pages/Projects"));
+import Projects from "../pages/Projects"
 
 const allRoutes = [
   {

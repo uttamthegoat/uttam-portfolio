@@ -7,13 +7,14 @@ import ScrollToTop from "./components/static/ScrollToTop";
 import allRoutes from "./utils/routes";
 import { AnimatePresence } from "framer-motion";
 import { SidebarProvider } from "./context/sidebar";
+import Loader from "./utils/Loader";
 
 function App() {
   const location = useLocation();
   return (
     <div className="App flex flex-col">
       <SidebarProvider>
-        <Suspense fallback={<h1>Loading...</h1>}>
+        <Suspense fallback={<Loader />}>
           {/* <Header /> */}
           <Navbar />
           <ScrollToTop />

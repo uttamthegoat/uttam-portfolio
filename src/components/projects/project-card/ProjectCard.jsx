@@ -59,14 +59,14 @@ export const ProjectCard = ({
               <FaExternalLinkAlt className="z-[2]" />
             </a>
           )}
-          <a
+          {code && (<a
             href={code}
             target="_blank"
             rel="noreferrer"
             className="text-2xl border-2 border-black rounded-full h-10 w-10 flex justify-center items-center cursor-pointer"
           >
             <FaCode className="z-[2]" />
-          </a>
+          </a>)}
         </div>
         <div className="absolute top-[18%] flex flex-col gap-y-3">
           <motion.div

@@ -33,7 +33,7 @@ ${name}`,
 
   // Send the email
   try {
-    const info = await transporter.sendMail(mailOptions);
+    await transporter.sendMail(mailOptions);
   } catch (error) {
     console.log(error.message);
   }

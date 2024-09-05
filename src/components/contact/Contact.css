@@ -1,5 +1,5 @@
 .detailsleft {
-  background-color: #9333ea;
+  background-color: #1d4ed8;
   transition: transform 0.5s ease, background-color 0.5s ease;
 }
 
@@ -20,7 +20,7 @@
   font-size: 30px;
   padding: 10px;
   border-radius: 100%;
-  background-color: #9333ea;
+  background-color: #1d4ed8;
   transition: transform 0.5s ease, background-color 0.5s ease;
 }
 

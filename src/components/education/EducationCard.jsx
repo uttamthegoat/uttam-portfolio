@@ -17,7 +17,7 @@ const EducationCard = ({ duration, institution, course }) => {
           </div>
         </div>
         <div className="education-card-right p-1 sm:p-3">
-          <div className="education-card-duration bg-purple-700 w-fit rounded-full font-semibold ">
+          <div className="education-card-duration bg-blue-800 w-fit rounded-full font-semibold ">
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}

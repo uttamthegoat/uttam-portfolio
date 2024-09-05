@@ -13,7 +13,7 @@ const ContactPage = () => {
           viewport={{ once: true }}
           className="text-5xl font-bold mx-auto w-fit"
         >
-          Get <span className="text-purple-700">In Touch</span>
+          Get <span className="text-blue-700">In Touch</span>
         </motion.div>
       </div>
       <div className="">

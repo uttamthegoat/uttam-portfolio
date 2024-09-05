@@ -126,7 +126,7 @@ const ContactForm = () => {
               transition={{ duration: 0.3, delay: 0.8 }}
               viewport={{ once: true }}
               type="submit"
-              className="contact-form-btn w-full text-2xl font-semibold py-3 rounded-xl bg-purple-700 hover:bg-purple-800 shadow-lg shadow-purple-900"
+              className="contact-form-btn w-full text-2xl font-semibold py-3 rounded-xl bg-blue-600 hover:bg-blue-800 shadow-lg shadow-blue-900"
             >
               <motion.p
                 initial={{ opacity: 0, x: "100%" }}
@@ -151,7 +151,7 @@ const ContactForm = () => {
               transition={{ duration: 0.3, delay: 0.1 }}
               viewport={{ once: true }}
               href={`mailto:${contactsData.email}`}
-              className="detailsleft rounded-full bg-purple-600 w-12 h-12 flex justify-center items-center"
+              className="detailsleft rounded-full bg-blue-600 w-12 h-12 flex justify-center items-center"
             >
               <FiAtSign className="text-2xl" />
             </motion.a>
@@ -173,7 +173,7 @@ const ContactForm = () => {
               transition={{ duration: 0.3, delay: 0.1 }}
               viewport={{ once: true }}
               href={`tel:${contactsData.phone}`}
-              className="detailsleft rounded-full bg-purple-600 w-12 h-12 flex justify-center items-center"
+              className="detailsleft rounded-full bg-blue-600 w-12 h-12 flex justify-center items-center"
             >
               <FiPhone className="text-2xl" />
             </motion.a>

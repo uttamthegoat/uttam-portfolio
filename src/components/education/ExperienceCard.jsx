@@ -17,7 +17,7 @@ const ExperienceCard = ({ company, duration, jobtitle, description }) => {
           </div>
         </div>
         <div className="experience-card-right p-1 sm:p-3">
-          <div className="experience-card-duration bg-purple-700 w-fit rounded-full font-semibold">
+          <div className="experience-card-duration bg-blue-800 w-fit rounded-full font-semibold">
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
